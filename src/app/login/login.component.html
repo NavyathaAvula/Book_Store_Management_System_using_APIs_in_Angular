@@ -1,0 +1,28 @@
+<div class="form">
+<mat-card style = "width:fit-content; margin : auto;padding:30px; margin-top: 80px;width: 230px;">
+  <h1>Login Form</h1>
+  <form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Email_Id</mat-label>
+        <input matInput placeholder="Email_Id" formControlName="email">
+        <mat-error>please enter 6 digit Email_Id</mat-error>
+     </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="password" formControlName="password">    
+        <mat-error>please enter 6 digit password</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button color="warn" type="submit" [disabled]="loginForm.invalid">Login</button>
+    </div>
+    <br>
+  </form>
+  <div>
+    <a routerLink="/register">Register</a>
+  </div> 
+</mat-card>
+</div>

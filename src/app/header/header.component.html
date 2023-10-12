@@ -1,0 +1,17 @@
+<p>
+    <mat-toolbar color="warn">
+        <img src="./assets/image/book-store.jpg" width="140px" height="60pxs" routerLink="home">
+        <div>
+            
+            <button mat-raised-button color="warn" routerLink="home">Home</button>
+            <button mat-raised-button color="warn" routerLink="book">Books Store</button>
+            <button mat-raised-button color="warn" routerLink="category">Category</button>
+            <button mat-raised-button color="warn" routerLink="registerBook">Register A Book</button>
+            <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+           
+        </div>
+        <mat-icon [matBadge]="actualCount" matBadgeColor="warn" routerLink="addtocart">shopping_cart</mat-icon>
+
+    </mat-toolbar>
+</p>
+  

@@ -1,0 +1,19 @@
+.form{
+    background-color: rgb(186, 217, 224);
+    /* margin-bottom: 0%; */
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+div{
+    align-items: center;
+   margin:auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Algerian';
+}

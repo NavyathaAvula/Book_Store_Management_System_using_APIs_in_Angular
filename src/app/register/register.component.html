@@ -1,0 +1,49 @@
+<div class="register">
+<mat-card style = "width:max-content; margin : auto; padding:30px ;margin-top: 30px;width: 290px;">
+    <h1>Registration Form</h1>
+    <form [formGroup]="register" (ngSubmit)="registerData()">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>First_Name</mat-label>
+          <input matInput placeholder="firstName" formControlName="firstname">
+          <mat-error>please enter First_Name</mat-error>
+       </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Last_Name</mat-label>
+          <input matInput placeholder="lastName" formControlName="lastName">
+          <mat-error>please enter Last_Name</mat-error>
+       </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Phone_Number</mat-label>
+          <input matInput placeholder="Phone_Numbe" formControlName="phoneNumber">
+          <mat-error>please enter Phone_Numbe</mat-error>
+       </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Email-Id</mat-label>
+          <input matInput placeholder="Email-Id" formControlName="emailId">
+          <mat-error>please enter Email-Id</mat-error>
+       </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" formControlName="password">    
+          <mat-error>please enter Password</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-raised-button color="warn" type="submit" [disabled]="register.invalid">Register</button>
+      </div>
+    </form> 
+    <br>
+    <div>
+       <a routerLink="/">Login</a>
+    </div>
+</mat-card>
+</div>

@@ -1,0 +1,13 @@
+<div style="background-color: rgb(186, 217, 224); height: 522px;">
+    <h1>Cart</h1>
+<div class="card">
+    <mat-card  *ngFor="let user of products" class="example-card">
+        <p><span>Id : </span>{{user?.id}}</p>
+        <p><span>Title : </span>{{user?.title}}</p>
+        <br>
+        <div style="background-size: cover;">
+            <img mat-card-image [src]="user?.image" >
+        </div>
+    </mat-card>
+    </div>
+</div>

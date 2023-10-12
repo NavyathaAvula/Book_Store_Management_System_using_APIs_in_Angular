@@ -1,0 +1,29 @@
+<div style="background-color: rgb(186, 217, 224); height: 522px;">
+    <h1>BOOKS Store</h1>
+<div class="card">
+    <mat-card  *ngFor="let user of usersResponse" class="example-card">
+     <div (click)="getToUserDetailsScreen(user?.id)">
+        <p><span>Id : </span>{{user?.id}}</p>
+        <p><span>Title : </span>{{user?.title}}</p>
+        <br>
+        <div style="background-size: cover;">
+            <img mat-card-image [src]="user?.image" >
+        </div>
+        <mat-card-content>
+            <p><span>publishedAt : </span>{{user?.publishedAt}} </p>
+            <p><span>Slug : </span>{{user?.slug}} </p>
+            <p style="justify-content:space-evenly;">
+                <span>Category : </span> {{user?.category }}
+            </p>
+        </mat-card-content>
+
+    </div>
+        <div class="button">
+            <button mat-raised-button color="warn" (click)="addToCart(user)">Add to Cart</button>
+            <button mat-raised-button color="warn" (click)="removeFromCart()">Remove from Cart</button>
+        </div>
+    
+    </mat-card>
+</div>
+</div>
+<mat-spinner color="warn" *ngIf="showSpinner" style="margin: auto;"></mat-spinner>

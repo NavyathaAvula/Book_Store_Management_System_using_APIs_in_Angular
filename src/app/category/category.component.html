@@ -1,0 +1,36 @@
+<div>
+<div style="background-color:rgb(186, 217, 224) ;height: 522px;">
+<div >
+  <button mat-raised-button color="warn" (click)="lorem()">Lorem</button>
+  <button mat-raised-button color="warn" (click)="rutrum()">Rutrum</button>
+  <button mat-raised-button color="warn" (click)="jsonplaceholder()">Jsonplaceholder</button>
+  <button mat-raised-button color="warn" (click)="ipsum()">Ipsum</button>
+  <button mat-raised-button color="warn" (click)="elementum()">Elementum</button>
+</div>
+<div class="card">
+  <mat-card  *ngFor="let user of Backenddata" class="example-card">
+   <div>
+      <p><span>Id : </span>{{user?.id}}</p>
+      <p><span>Title : </span>{{user?.title}}</p>
+      <br>
+      <div style="background-size: cover;">
+          <img mat-card-image [src]="user?.image" >
+      </div>
+      <mat-card-content>
+          <p><span>publishedAt : </span>{{user?.publishedAt}} </p>
+          <p><span>Slug : </span>{{user?.slug}} </p>
+          <p style="justify-content:space-evenly;">
+              <span>Category : </span> {{user?.category }}
+          </p>
+      </mat-card-content>
+
+  </div>
+ 
+          <button mat-raised-button color="warn" (click)="addToCart()">Add to Cart</button>
+          <button mat-raised-button color="warn" (click)="removeFromCart()">Remove from Cart</button>
+
+  
+  </mat-card>
+</div>
+</div>
+</div>

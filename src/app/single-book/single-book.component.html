@@ -1,0 +1,21 @@
+<div class="card">
+    <button mat-raised-button routerLink="/book">Back to Users List</button>
+    <mat-card  class="example-card">
+
+       <p><span>Id : </span>{{singleBookDetails?.id}}</p>
+        <p><span>Title : </span>{{singleBookDetails?.title}}</p>
+        <br>
+        <div style="background-size: cover;">
+            <img mat-card-image [src]="singleBookDetails?.image" >
+        </div>
+        <mat-card-content>
+            <p style="justify-content:space-evenly;"><span>Content : </span>{{singleBookDetails?.content}}</p>
+            <p><span>Category : </span> {{singleBookDetails?.category }}</p>
+            <p><span>Slug : </span>{{singleBookDetails?.slug}} </p>
+            <p><span>Status : </span>{{singleBookDetails?.status}}</p>
+            <p><span>PublishedAt : </span>{{singleBookDetails?.publishedAt}} </p>
+            <p><span>UpdatedAt: </span>{{singleBookDetails?.updatedAt}} </p>
+            <p><span>Url : </span>{{singleBookDetails?.url}} </p>
+        </mat-card-content>
+    </mat-card>
+</div>

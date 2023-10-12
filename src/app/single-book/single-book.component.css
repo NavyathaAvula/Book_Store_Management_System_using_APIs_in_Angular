@@ -1,0 +1,32 @@
+.example-card {
+    max-width:700px;
+    border-radius: 20px;
+    align-self:flex-start;
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+img{
+    width: 700px;
+    height: 300px;
+    align-items: center;
+    
+}
+.card{
+    display: flex;
+    align-items: center; 
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(186, 217, 224);
+   
+
+}
+span{
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Algerian';
+}
